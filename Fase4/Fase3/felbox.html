@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Flexbox</title>
+    <link href="/Fase3/flexbox.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Contenedor para toda la página -->
+
+    <div id="contenedor" class="">
+       
+        <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+          <title>FlexBox</title>
+          <link href="flexbox.css" rel="stylesheet" type="text/css" />
+        </head>
+        
+        <body>
+        
+          <!-- Contenedor para toda la página -->
+        
+          <div id="contenedor" class="">
+            <h1>
+              FexBox
+            </h1>
+        
+            <!-- Capa destinada al header -->
+        
+            <div id="cabecera">
+              <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+
+                <div class="container-fluid">
+        
+                    <a class="navbar-brand" href="#">Diseño Web</a>
+        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+        
+        
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        
+                        <ul class="navbar-nav ml-auto nav-md-right ">
+        
+        
+        
+                            <!--Inicio-->
+                            <li>
+                                <a class="nav-link " href="/Fase1/Index.html">
+                                    Inicio
+                                </a>
+        
+                            </li>
+        
+                            <!--Cursos-->
+                            <li class="nav-item dropdown ">
+        
+        
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cursos
+                                </a>
+        
+                                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/Fase3/html.html">Html</a></li>
+                                    <li><a class="dropdown-item" href="/Fase3/felbox.html">FlexBox</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+        
+                                </ul>
+        
+                            </li>
+                            <!--Material Digital-->
+                            <li class="nav-item dropdown">
+        
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Material Digital
+                                </a>
+        
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/Fase3/contenidoDigital/digitalhtml.html">Html</a></li>
+                                    <li><a class="dropdown-item" href="/Fase3/contenidoDigital/digitalflexbox.html">FlexBox</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+        
+                                </ul>
+        
+                            </li>
+                            <!--Aprendizaje-->
+                            <li class="nav-item dropdown">
+        
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Aprendizaje
+                                </a>
+        
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/Fase4/evaluacion1.html">Evaluacion 1</a></li>
+                                    <li><a class="dropdown-item" href="/Fase4/evaluacion 2.html">Evaluacion 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+        
+                                </ul>
+        
+                            </li>
+        
+                            <!--Autor-->
+                            <li>
+                                <a class="nav-link " href="#">
+                                    Autor
+                                </a>
+        
+                            </li>
+        
+        
+                        </ul>
+        
+                    </div>
+        
+        
+        
+                </div>
+            </nav>
+        
+            </div>
+        
+        
+            <!-- Capa de contenidos, columnas, etc. -->
+        
+            <div id="principal">
+        
+              <div class="container">
+                
+                <section class="section1">
+                  <article>
+
+                    <div class="articulo">
+                      <h1>
+                        Conceptos Básicos de flexbox
+                      </h1>
+                      <p>
+                        El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional
+                        de
+                        layout,
+                        y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar
+                        las
+                        capacidades
+                        de alineación. Este artículo hace un repaso de las principales características de flexbox, las que
+                        exploraremos con
+                        mayor detalle en el resto de estas guías.
+        
+                        Cuando describimos a flexbox como unidimensional
+                        destacamos el hecho que flexbox maneja el layout en una sola dimensión a la vez ya sea como fila o
+                        como
+                        columna.
+                        Esto contrasta con el modelo bidimensional del Grid Layout de CSS, el cual controla columnas y filas
+                        a
+                        la
+                        vez.?<br>
+                      </p>
+                      <h3>Los dos ejes de flexbox </h3>
+                      <p>
+                        Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes el eje principal y el eje
+                        cruzado.
+                        El eje principal está definido por la propiedad flex-direction,
+                        y el eje cruzado es perpendicular a este. <br>
+                        Todo lo que hacemos con flexbox está referido a estos dos ejes, por lo que vale la pena entender
+                        cómo
+                        trabajan desde el principio.
+                      </p>
+        
+                      <h3>El eje principal </h3>
+                      <p>
+                        El eje principal está definido por flex-direction, que posee cuatro posibles valores: <br>
+        
+                        1.row <br>
+                        2. row-reverse <br>
+                        3.column <br>
+                        4. column-reverse <br>
+        
+                        Si elegimos row o row-reverse, el eje principal correrá a lo largo de la fila según la dirección de
+                        la
+                        línea
+        
+                      </p>
+                      <h3>Número de inicio de la lista: start
+                      </h3>
+                      <p>
+                        El atributo start nos permite indicar el número por el cual
+                        queremos que empiece la lista, ya que por defecto las listas
+                        ordenadas en HTML empiezan por el número 1. El eje principal
+                        está definido por flex-direction, que posee cuatro posibles valores: <br>
+        
+                      </p>
+        
+                    </div>
+
+                  </article>
+                </section>
+        
+        
+                <section class="section2">
+                  <div class="bloque1">
+        
+                    <img
+                      src="https://blog.ida.cl/wp-content/uploads/sites/5/2017/12/Porque%CC%81-comenzar-a-utilizar-flexbox.png"
+                      alt="" width="250px">
+        
+                  </div>
+        
+                  <div class="bloque2">
+                    <p>
+                    <p>Alinear, llenar o distribuir el espacio entre los elementos dentro de un contenedor, usando anchos y
+                      alturas flexibles es más fácil gracias al uso de Flexbox. Esta herramienta es ideal para usar en sistemas
+                      de diseño responsivo y reemplaza
+                      los float o position cuando se desee centrar y ordenar elementos.</p>
+                    </p>
+                  </div>
+                  <div class="bloque3">
+                    <img src="https://blog.ida.cl/wp-content/uploads/sites/5/2017/12/around-2.gif" alt="" width="350px">
+        
+                  </div>
+                  <div class="bloque4">
+                    <p>Incluso, con justify-content: space-between; podemos tener el espacio distribuido de manera uniforme
+                      entre los elementos del medio, sin tratar de solucionar esto con
+                      :first-child o
+                      :last-child para que la primera y última caja no tengan un espacio no deseado.
+                    <p>
+        
+                  </div>
+                </section>
+        
+        
+        
+              </div>
+            </div>
+        
+        
+            <!-- Capa para el pie de página -->
+        
+            <div id="pie">
+        
+        
+              <div class="contenedor-logos  ">
+        
+        
+                <a href="https://twitter.com/UniversidadUNAD" target="_blank"><img
+                    src="https://lh6.googleusercontent.com/-vao9pzZoGtk/T6VYC4d1YMI/AAAAAAAAA0U/4rdP2chJido/s48/twitter48.png"
+                    width=48 height=48 alt="Síguenos en Twitter" /></a>
+        
+        
+                <a href="https://www.facebook.com/UniversidadUNAD" target="_blank"><img alt="Siguenos en Facebook"
+                    src="https://lh3.googleusercontent.com/-NSLbC_ztNls/T6VX0g6z8AI/AAAAAAAAA0A/_vyIBrmZbuY/s48/facebook48.png"
+                    width=48 height=48 /></a>
+        
+        
+        
+              </div>
+        
+        
+        
+            </div>
+        
+        
+            <!-- Cierre del contenedor de toda la página -->
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        </body>
+        
+        </html>

@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   
+   
+  <title>HTML</title>
+  <link href="html.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- Contenedor para toda la página -->
+
+  <div id="contenedor" class="">
+    <h1>
+      HTML
+    </h1>
+
+    <!-- Capa destinada al header -->
+
+    <div id="cabecera">
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Diseño Web</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto nav-md-right ">
+
+
+
+                    <!--Inicio-->
+                    <li>
+                        <a class="nav-link " href="/Fase1/Index.html">
+                            Inicio
+                        </a>
+
+                    </li>
+
+                    <!--Cursos-->
+                    <li class="nav-item dropdown ">
+
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                        </a>
+
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/Fase3/html.html">Html</a></li>
+                            <li><a class="dropdown-item" href="/Fase3/felbox.html">FlexBox</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <!--Material Digital-->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Material Digital
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/Fase3/contenidoDigital/digitalhtml.html">Html</a></li>
+                            <li><a class="dropdown-item" href="/Fase3/contenidoDigital/digitalflexbox.html">FlexBox</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <!--Aprendizaje-->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprendizaje
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/Fase4/evaluacion1.html">Evaluacion 1</a></li>
+                            <li><a class="dropdown-item" href="/Fase4/evaluacion 2.html">Evaluacion 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!--Autor-->
+                    <li>
+                        <a class="nav-link " href="#">
+                            Autor
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    </div>
+
+
+    <!-- Capa de contenidos, columnas, etc. -->
+
+    <div id="principal">
+
+      <div class="container">
+        <section class="section1">
+          <article>
+            <div class="articulo">
+              <h1>Listas HTML</h1>
+              <p>
+                Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página,
+                todos los cuales irán precedidos, generalmente,
+                por un guión o número. <br>
+
+                Los tipos de listas en HTML son los siguientes: <br>
+                <br>
+              <ul>
+                Listas ordenadas <br>
+                Listas desordenadas <br>
+                Listas de definiciones <br>
+              </ul>
+              <h3>Tipo de lista ordenada: type </h3>
+              De igual manera podemos indicar el tipo de lista ordenada en HTML que queremos representar. <br>
+
+              Entre los tipos de listas que podemos representar tenemos: <br>
+
+
+              1 - Listas decimales <br>
+              a - Listas alfabéticas en minúsculas <br>
+              A - Listas alfabéticas en mayúsculas <br>
+              i - Listas de números romanos en minúsculas <br>
+              I - Listas de números romanos en mayúsculas <br>
+              <br>
+              Los valores indicados al principio son los que le podemos asignar al atributo type de la lista ordenada
+              en HTML. <br>
+              </p>
+              <h3>Número de inicio de la lista: start
+              </h3>
+              <p>
+                El atributo start nos permite indicar el número por el cual
+                queremos que empiece la lista, ya que por defecto las listas
+                ordenadas en HTML empiezan por el número 1. El eje principal
+                está definido por flex-direction, que posee cuatro posibles valores: <br>
+
+              </p>
+
+            </div>
+          </article>
+        </section>
+
+
+        <section class="section2">
+          <div class="bloque1">
+            
+            <img src="https://image.slidesharecdn.com/listas-210730203114/85/listas-html-5-320.jpg?cb=1662524556"
+              alt="" width="200PX" height="200PX">
+          </div>
+          <div class="bloque2">
+            <p>
+              Número de inicio de la lista: start
+              El atributo start nos permite indicar el número por el cual queremos que empiece la lista, ya que por
+              defecto las listas ordenadas en HTML empiezan por el número 1.
+
+           
+            </p>
+            <ol start="numero"> ... </ol>
+            De esta forma, si queremos que la lista empiece por el número 5, escribiremos el siguiente código:
+
+            <ol start="5">
+              <li>Julio</li>
+              <li>Carmen</li>
+              <li>Ignacio</li>
+              <li>Elena</li>
+            </ol>
+            Que produciría el siguiente efecto:
+
+            Julio
+            Carmen
+            Ignacio
+            Elena
+          </div>
+          <div class="bloque3">
+
+
+
+            <img src=" https://disenowebakus.net/imagenes/articulos/listas-html-ul-ol-dl.jpg" alt="" width="550PX" height="300PX">
+
+          </div>
+          <div class="bloque4">
+            <p>
+              Imagine que tiene un documento donde maneja una considerable cantidad de información.
+              Usualmente cuando existe esta situación, usted desea abreviar el tiempo para que cualquier persona
+              encuentre más rápida
+              y eficientemente cierto punto de interés entre toda la cantidad de información disponible, para lograr
+              esto se recurre a elaborar algún tipo de lista
+              (como un índice, por ejemplo). <br>
+              <br>
+              En este punto se explorarán las posibilidades de HTML con respecto al uso de listas,
+              como son: listas numeradas, conocidas también como listas ordenadas, listas no numeradas llamadas también
+              listas no ordenadas
+              y las listas de definición. También se aprenderá cómo anidar listas dentro de otras.
+            </p>
+
+          </div>
+        </section>
+
+
+
+      </div>
+    </div>
+
+
+    <!-- Capa para el pie de página -->
+
+    <div id="pie">
+
+
+      <div class="contenedor-logos  ">
+
+
+        <a href="http://twitter.com/AQUI_TU_USUARIO" target="_blank"><img
+            src="https://lh6.googleusercontent.com/-vao9pzZoGtk/T6VYC4d1YMI/AAAAAAAAA0U/4rdP2chJido/s48/twitter48.png"
+            width=48 height=48 alt="Síguenos en Twitter" /></a>
+
+
+        <a href="http://www.facebook.com/AQUI_TU_PAGINA" target="_blank"><img alt="Siguenos en Facebook"
+            src="https://lh3.googleusercontent.com/-NSLbC_ztNls/T6VX0g6z8AI/AAAAAAAAA0A/_vyIBrmZbuY/s48/facebook48.png"
+            width=48 height=48 /></a>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+    <!-- Cierre del contenedor de toda la página -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
